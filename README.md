@@ -1,6 +1,9 @@
 # ChaosMonkey 🐒 for PHP
 
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.4-8892BF.svg)](https://php.net/)
+[![Latest Stable Version](https://poser.pugx.org/chaos-php/chaos-monkey/v/stable?format=flat)](https://packagist.org/packages/chaos-php/chaos-monkey)
+[![buddy branch](https://app.buddy.works/akondas/chaos-monkey/repository/branch/master/badge.svg?token=bfd952ec0cee0cb4db84dbd50ded487354ee6c9f37a7034f7c46425fed70dea7 "buddy branch")](https://app.buddy.works/akondas/chaos-monkey/repository/branch/master)
+![GitHub](https://img.shields.io/github/license/chaos-php/chaos-monkey)
 
 Chaos Monkey for PHP applications. Try to attack your running PHP App.
 
@@ -15,7 +18,7 @@ Chaos Monkey for PHP applications. Try to attack your running PHP App.
 
 The best experience you can get is using ready-made integrations:
  - Symfony: [ChaosMonkeySymfonyBundle](https://github.com/chaos-php/chaos-monkey-symfony-bundle)
- - Laravel (in progress)
+ - Laravel: [ChaosMonkeyLaravelPackage](https://github.com/chaos-php/chaos-monkey-laravel-package) (in progress)
 
 If your framework is missing, open an issue or use this package manually:
 
