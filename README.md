@@ -2,7 +2,6 @@
 
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.4-8892BF.svg)](https://php.net/)
 [![Latest Stable Version](https://poser.pugx.org/chaos-php/chaos-monkey/v/stable?format=flat)](https://packagist.org/packages/chaos-php/chaos-monkey)
-[![buddy branch](https://app.buddy.works/akondas/chaos-monkey/repository/branch/master/badge.svg?token=bfd952ec0cee0cb4db84dbd50ded487354ee6c9f37a7034f7c46425fed70dea7 "buddy branch")](https://app.buddy.works/akondas/chaos-monkey/repository/branch/master)
 ![GitHub](https://img.shields.io/github/license/chaos-php/chaos-monkey)
 
 Chaos Monkey for PHP applications. Try to attack your running PHP App.
