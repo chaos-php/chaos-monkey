@@ -17,7 +17,7 @@
         }
     ],
     "require": {
-        "php": "^7.4 || ^8.0",
+        "php": "^8.0",
         "akondas/php-runtime": "^0.1.0"
     },
     "require-dev": {

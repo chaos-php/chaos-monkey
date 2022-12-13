@@ -24,6 +24,6 @@ class KillAppAssault implements Assault
     public function attack(): void
     {
         // cheers :D
-        exit();
+        exit;
     }
 }
