@@ -38,4 +38,4 @@ jobs:
       run: composer install
 
     - name: Run test suite
-      run: composer build
+      run: PHP_CS_FIXER_IGNORE_ENV=1 composer build
