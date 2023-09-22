@@ -37,6 +37,11 @@
             "Chaos\\Monkey\\Tests\\": "tests/"
         }
     },
+    "config": {
+        "platform": {
+            "php": "8.0"
+        }
+    },
     "scripts": {
         "build": [
             "@check-cs",
