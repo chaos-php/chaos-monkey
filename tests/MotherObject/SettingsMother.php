@@ -19,6 +19,9 @@ class SettingsMother
         return $settings;
     }
 
+    /**
+     * @param class-string<\Throwable> $exceptionClass
+     */
     public static function withExceptionActive(string $exceptionClass): Settings
     {
         $settings = new Settings();

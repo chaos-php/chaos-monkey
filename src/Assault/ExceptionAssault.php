@@ -23,7 +23,6 @@ class ExceptionAssault implements Assault
 
     public function attack(): void
     {
-        $exceptionClass = $this->settings->exceptionClass();
-        throw new $exceptionClass();
+        throw new ($this->settings->exceptionClass())();
     }
 }

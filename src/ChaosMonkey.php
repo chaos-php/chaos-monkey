@@ -13,6 +13,9 @@ class ChaosMonkey
 
     private Settings $settings;
 
+    /**
+     * @param iterable<Assault> $assaults
+     */
     public function __construct(iterable $assaults, Settings $settings)
     {
         foreach ($assaults as $assault) {
