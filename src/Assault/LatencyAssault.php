@@ -7,13 +7,10 @@ namespace Chaos\Monkey\Assault;
 use Chaos\Monkey\Assault;
 use Chaos\Monkey\Settings;
 
-class LatencyAssault implements Assault
+final class LatencyAssault implements Assault
 {
-    private Settings $settings;
-
-    public function __construct(Settings $settings)
+    public function __construct(private readonly Settings $settings)
     {
-        $this->settings = $settings;
     }
 
     public function isActive(): bool
@@ -23,7 +20,7 @@ class LatencyAssault implements Assault
 
     public function attack(): void
     {
-        $latencyMs = random_int($this->settings->latencyMinMs(), $this->settings->latencyMaxMs());
+        $latencyMs = \random_int($this->settings->latencyMinMs(), $this->settings->latencyMaxMs());
         usleep($latencyMs * 1000);
     }
 }

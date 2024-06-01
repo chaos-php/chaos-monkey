@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Chaos\Monkey;
 
-class Settings
+final class Settings
 {
     private bool $enabled;
     private int $probability;

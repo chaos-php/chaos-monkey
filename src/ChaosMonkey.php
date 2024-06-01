@@ -4,24 +4,13 @@ declare(strict_types=1);
 
 namespace Chaos\Monkey;
 
-class ChaosMonkey
+final class ChaosMonkey
 {
     /**
-     * @var Assault[]
+     * @param list<Assault> $assaults
      */
-    private array $assaults = [];
-
-    private Settings $settings;
-
-    /**
-     * @param iterable<Assault> $assaults
-     */
-    public function __construct(iterable $assaults, Settings $settings)
+    public function __construct(private readonly array $assaults, private readonly Settings $settings)
     {
-        foreach ($assaults as $assault) {
-            $this->assaults[] = $assault;
-        }
-        $this->settings = $settings;
     }
 
     public function call(): void
@@ -43,7 +32,7 @@ class ChaosMonkey
 
     private function isTrouble(): bool
     {
-        return $this->settings->probability() >= random_int(0, 100);
+        return $this->settings->probability() >= \random_int(0, 100);
     }
 
     private function chooseAndRunAttack(): void
@@ -57,15 +46,15 @@ class ChaosMonkey
     }
 
     /**
-     * @return Assault[]
+     * @return list<Assault>
      */
     private function getActiveAssaults(): array
     {
-        return array_filter($this->assaults, fn (Assault $assault) => $assault->isActive());
+        return array_values(array_filter($this->assaults, fn (Assault $assault) => $assault->isActive()));
     }
 
     /**
-     * @param Assault[] $assaults
+     * @param list<Assault> $assaults
      */
     private function getRandomAssault(array $assaults): Assault
     {

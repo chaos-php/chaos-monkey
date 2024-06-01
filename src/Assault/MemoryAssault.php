@@ -8,19 +8,17 @@ use Akondas\Runtime;
 use Chaos\Monkey\Assault;
 use Chaos\Monkey\Settings;
 
-class MemoryAssault implements Assault
+final class MemoryAssault implements Assault
 {
-    private Settings $settings;
     private int $totalMemory;
 
     /**
-     * @var mixed[]
+     * @var int[][]
      */
     private array $memoryVector;
 
-    public function __construct(Settings $settings)
+    public function __construct(private readonly Settings $settings)
     {
-        $this->settings = $settings;
         $this->totalMemory = (new Runtime())->totalMemory();
     }
 
@@ -37,7 +35,7 @@ class MemoryAssault implements Assault
     }
 
     /**
-     * @return mixed[]
+     * @return int[][]
      */
     public function memoryVector(): array
     {
