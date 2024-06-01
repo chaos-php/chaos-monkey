@@ -1,6 +1,6 @@
 # ChaosMonkey 🐒 for PHP
 
-[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%208.0-8892BF.svg)](https://php.net/)
+[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%208.1-8892BF.svg)](https://php.net/)
 [![build](https://github.com/chaos-php/chaos-monkey/actions/workflows/build.yml/badge.svg)](https://github.com/chaos-php/chaos-monkey/actions/workflows/build.yml)
 [![Latest Stable Version](https://poser.pugx.org/chaos-php/chaos-monkey/v/stable?format=flat)](https://packagist.org/packages/chaos-php/chaos-monkey)
 ![GitHub](https://img.shields.io/github/license/chaos-php/chaos-monkey)

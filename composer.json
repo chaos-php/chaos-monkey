@@ -17,8 +17,8 @@
         }
     ],
     "require": {
-        "php": "^8.0",
-        "akondas/php-runtime": "^0.1.0"
+        "php": "^8.1",
+        "akondas/php-runtime": "^1.1"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.27",
@@ -39,7 +39,7 @@
     },
     "config": {
         "platform": {
-            "php": "8.0"
+            "php": "8.1"
         }
     },
     "scripts": {
