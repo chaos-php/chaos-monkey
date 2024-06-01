@@ -9,11 +9,8 @@ use Chaos\Monkey\Settings;
 
 class KillAppAssault implements Assault
 {
-    private Settings $settings;
-
-    public function __construct(Settings $settings)
+    public function __construct(private readonly Settings $settings)
     {
-        $this->settings = $settings;
     }
 
     public function isActive(): bool
