@@ -36,6 +36,14 @@ class MemoryAssault implements Assault
         }
     }
 
+    /**
+     * @return mixed[]
+     */
+    public function memoryVector(): array
+    {
+        return $this->memoryVector;
+    }
+
     private function fillFraction(): float
     {
         return memory_get_usage(true) / $this->totalMemory;

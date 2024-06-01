@@ -14,6 +14,9 @@ class Settings
     private int $latencyMaxMs;
 
     private bool $exceptionActive;
+    /**
+     * @var class-string<\Throwable>
+     */
     private string $exceptionClass;
 
     private bool $killAppActive;
@@ -76,6 +79,9 @@ class Settings
         $this->exceptionActive = $exceptionActive;
     }
 
+    /**
+     * @param class-string<\Throwable> $exceptionClass
+     */
     public function setExceptionClass(string $exceptionClass): void
     {
         $this->exceptionClass = $exceptionClass;
@@ -126,6 +132,9 @@ class Settings
         return $this->exceptionActive;
     }
 
+    /**
+     * @return class-string<\Throwable>
+     */
     public function exceptionClass(): string
     {
         return $this->exceptionClass;
