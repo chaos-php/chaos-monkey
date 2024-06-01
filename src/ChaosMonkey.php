@@ -7,10 +7,16 @@ namespace Chaos\Monkey;
 final class ChaosMonkey
 {
     /**
-     * @param list<Assault> $assaults
+     * @var list<Assault>
      */
-    public function __construct(private readonly array $assaults, private readonly Settings $settings)
+    private readonly array $assaults;
+
+    /**
+     * @param iterable<Assault> $assaults
+     */
+    public function __construct(iterable $assaults, private readonly Settings $settings)
     {
+        $this->assaults = array_values([...$assaults]);
     }
 
     public function call(): void
