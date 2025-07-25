@@ -8,7 +8,7 @@ use Chaos\Monkey\Assault\ExceptionAssault;
 use Chaos\Monkey\Tests\MotherObject\SettingsMother;
 use PHPUnit\Framework\TestCase;
 
-class ExceptionAssaultTest extends TestCase
+final class ExceptionAssaultTest extends TestCase
 {
     public function testExceptionAssault(): void
     {
