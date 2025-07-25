@@ -8,7 +8,7 @@ use Chaos\Monkey\Assault\KillAppAssault;
 use Chaos\Monkey\Tests\MotherObject\SettingsMother;
 use PHPUnit\Framework\TestCase;
 
-class KillAppAssaultTest extends TestCase
+final class KillAppAssaultTest extends TestCase
 {
     public function testKillAppAssaultActive(): void
     {

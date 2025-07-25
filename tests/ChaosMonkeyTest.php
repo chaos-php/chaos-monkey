@@ -9,7 +9,7 @@ use Chaos\Monkey\ChaosMonkey;
 use Chaos\Monkey\Tests\MotherObject\SettingsMother;
 use PHPUnit\Framework\TestCase;
 
-class ChaosMonkeyTest extends TestCase
+final class ChaosMonkeyTest extends TestCase
 {
     public function testDisableEnableChaosMonkey(): void
     {

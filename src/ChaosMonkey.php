@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace Chaos\Monkey;
 
-final class ChaosMonkey
+final readonly class ChaosMonkey
 {
     /**
      * @var list<Assault>
      */
-    private readonly array $assaults;
+    private array $assaults;
 
     /**
      * @param iterable<Assault> $assaults
      */
-    public function __construct(iterable $assaults, private readonly Settings $settings)
+    public function __construct(iterable $assaults, private Settings $settings)
     {
         $this->assaults = array_values([...$assaults]);
     }

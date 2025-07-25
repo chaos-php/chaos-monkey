@@ -8,7 +8,7 @@ use Chaos\Monkey\Assault\LatencyAssault;
 use Chaos\Monkey\Tests\MotherObject\SettingsMother;
 use PHPUnit\Framework\TestCase;
 
-class LatencyAssaultTest extends TestCase
+final class LatencyAssaultTest extends TestCase
 {
     public function testLatencyAttack(): void
     {

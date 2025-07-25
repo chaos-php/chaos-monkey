@@ -7,9 +7,9 @@ namespace Chaos\Monkey\Assault;
 use Chaos\Monkey\Assault;
 use Chaos\Monkey\Settings;
 
-final class ExceptionAssault implements Assault
+final readonly class ExceptionAssault implements Assault
 {
-    public function __construct(private readonly Settings $settings)
+    public function __construct(private Settings $settings)
     {
     }
 
