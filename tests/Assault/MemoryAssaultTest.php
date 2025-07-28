@@ -9,7 +9,7 @@ use Chaos\Monkey\Assault\MemoryAssault;
 use Chaos\Monkey\Tests\MotherObject\SettingsMother;
 use PHPUnit\Framework\TestCase;
 
-class MemoryAssaultTest extends TestCase
+final class MemoryAssaultTest extends TestCase
 {
     public function testMemoryAssault(): void
     {
